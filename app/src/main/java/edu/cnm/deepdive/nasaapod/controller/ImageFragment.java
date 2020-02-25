@@ -79,7 +79,7 @@ public class ImageFragment extends Fragment {
     super.onCreateOptionsMenu(menu, inflater);
     inflater.inflate(R.menu.image_options, menu);
   }
-
+  
   @Override
   public boolean onOptionsItemSelected(@NonNull MenuItem item) {
     boolean handled = true;
@@ -92,9 +92,9 @@ public class ImageFragment extends Fragment {
         activity.setProgressVisibility(View.VISIBLE);
         viewModel.downloadImage(apod, () -> {
           activity.setProgressVisibility(View.GONE);
-          activity.showToast("Image Downlaoded");
-
-          break;
+          activity.showToast(getString(R.string.image_downloaded));
+        });
+        break;
       default:
         handled = super.onOptionsItemSelected(item);
     }
