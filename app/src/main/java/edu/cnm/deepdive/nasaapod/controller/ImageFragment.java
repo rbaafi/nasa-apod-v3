@@ -79,7 +79,7 @@ public class ImageFragment extends Fragment {
     super.onCreateOptionsMenu(menu, inflater);
     inflater.inflate(R.menu.image_options, menu);
   }
-  
+
   @Override
   public boolean onOptionsItemSelected(@NonNull MenuItem item) {
     boolean handled = true;

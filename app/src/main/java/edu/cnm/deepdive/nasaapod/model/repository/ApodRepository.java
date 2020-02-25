@@ -8,7 +8,7 @@ import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import android.os.Environment;
 import android.provider.MediaStore.MediaColumns;
-import android.provider.MediaStore.Video.Media;
+import android.provider.MediaStore.Images.Media;
 import android.webkit.MimeTypeMap;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
